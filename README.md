@@ -1,6 +1,6 @@
 # BSL-Awareness-Website
 
-This was a final project I did in my Multimedia & Digital Art class at Indiana University.
+This was a final project I did in my Multimedia & Digital Art class at Indiana University in the Fall of 2021.
 
 The purpose of this final was to create a multimedia project to educate others about a specific social topic. I chose to talk about Breed-Specific Legislations, in which are laws that ban specific breeds from specific areas. My goal was to 1.) De-stigmatize pitbulls and 2.) explain how breed-specific legislations aren't the answer when it comes to violent dog incidents. 
 
