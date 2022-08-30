@@ -1,11 +1,250 @@
-h1 {
-    font-family: 'Koulen', cursive;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-h2 {
-    font-family: 'Open Sans', sans-serif;
+/*class of background images, all same code except images*/
+
+.home {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-image: url(images/pitbull-black-bg.jpeg);
+    background-size: cover;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 700;
 }
 
-p {
-    font-family: 'Open Sans', sans-serif;
+.myths {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-image: url(images/old-pitbull.jpeg);
+    background-size: cover;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.research {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-image: url(images/grey-bg-pitty.jpeg);
+    background-size: cover;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.donate {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-image: url(images/black-bg-pitbull-laying-down.jpeg);
+    background-size: cover;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.bsl {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-image: url(images/black-pitbull-background.jpeg);
+    background-size: cover;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+/*header animation*/
+
+@-webkit-keyframes fading {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fading {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fading {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    -webkit-animation: fading ease-in 1s;
+    animation: fading ease-in 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.paragraph {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.subtitle {
+    font-weight: 100;
+    -webkit-animation-delay: 1.1s;
+    animation-delay: 1.1s
+}
+
+.nav {
+    -webkit-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+}
+
+/*start of main body*/
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
+}
+
+.parallax__group {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hero-text {
+    background: linear-gradient( rgba(255, 255, 255, 0) 0%, rgb(1, 0, 0) 100%);
+    background-size: cover;
+    transform: translateZ(0) scale(1);
+    z-index: 7;
+}
+
+.hero-text h2 {
+    font-size: 1.25rem;
+    position: absolute;
+    left: 2.5rem;
+    top: 2.5rem;
+}
+
+.year-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 95vw;
+    height: 8rem;
+}
+
+.year-container h1 {
+    font-family: Montserrat, Trebuchet MS, Arial, sans-serif;
+    font-size: 76px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.info-container {
+    background: #000;
+    transform: translateZ(0) scale(1);
+    z-index: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.info-container img {
+    margin: auto;
+    display: block;
+}
+
+.info-container {
+    display: grid;
+    align-items: center;
+    text-align: left;
+}
+
+.infographic-content {
+    background: #000;
+    position: relative;
+    width: 95vw;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.text-container p {
+    font-family: Montserrat, Trebuchet MS, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    width: 95vw;
+    margin: 1rem 0;
+    margin-bottom: 1.3em;
+}
+
+img {
+    max-width: 100vh;
+}
+
+.download {
+    text-align: center;
+    margin-top: 1em;
+}
+
+/*nav bar*/
+
+nav {
+    max-width: 100vh;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 1rem;
+    font-family: Montserrat, Trebuchet MS, Arial, sans-serif;
+    text-transform: uppercase;
+    color: grey;
+    font-size: 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: 0.5s;
+}
+
+.current {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
 }
